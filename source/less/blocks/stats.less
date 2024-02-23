@@ -1,0 +1,38 @@
+.stats {
+  background-color: @darkgrey;
+  color: #fff;
+  &__header {
+    background-color: #fff;
+    color: #000;
+  }
+  &__slogan {
+    margin: 0;
+  }
+  &__intro {
+    margin: 0;
+  }
+  &__legend {
+    margin: 0;
+  }
+  &__legend--top {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+  &__legend--bottom {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}

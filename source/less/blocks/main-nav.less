@@ -1,0 +1,32 @@
+.main-nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__list a {
+    color: #fff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 640px;
+      margin: 0 auto;
+    }
+    &__toggle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    &__wrapper {
+      width: 960px;
+    }
+  }
+}
